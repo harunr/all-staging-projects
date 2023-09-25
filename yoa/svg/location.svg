@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>icn/location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icn/location" fill-rule="nonzero" fill="#C3C2C2">
+            <path d="M10,3 C7.21428571,3 5,5.17 5,7.9 C5,12.1 10,17 10,17 C10,17 15,12.03 15,7.9 C15,5.17 12.7857143,3 10,3 Z M10,9.65 C9,9.65 8.21428571,8.88 8.21428571,7.9 C8.21428571,6.92 9,6.15 10,6.15 C11,6.15 11.7857143,6.92 11.7857143,7.9 C11.7857143,8.88 11,9.65 10,9.65 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

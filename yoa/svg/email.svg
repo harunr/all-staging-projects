@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>icn/email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icn/email" fill-rule="nonzero" fill="#C3C2C2">
+            <path d="M10,12 L11.732,10.484 L16.681,14.729 C16.502,14.896 16.26,15 15.993,15 L4.007,15 C3.739,15 3.496,14.896 3.316,14.729 L8.268,10.484 L10,12 Z M16.684,5.271 L10,11 L3.318,5.273 C3.498,5.104 3.74,5 4.007,5 L15.993,5 C16.262,5 16.504,5.103 16.684,5.271 Z M3,5.878 L7.833,10.079 L3,14.186 L3,5.878 Z M12.167,10.079 L17,5.875 L17,14.186 L12.167,10.079 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

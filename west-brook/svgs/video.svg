@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon/video</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,3 C2.9069372,3 2,3.9069372 2,5 L2,19 C2,20.093063 2.9069372,21 4,21 L20,21 C21.093063,21 22,20.093063 22,19 L22,5 C22,3.9069372 21.093063,3 20,3 L4,3 Z M4,5 L20,5 L20,19 L4,19 L4,5 Z M9,8 L9,16 L16,12 L9,8 Z" id="Shape" fill="#000000"></path>
+    </g>
+</svg>

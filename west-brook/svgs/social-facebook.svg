@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon/social-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/social-facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M25.8694063,35 L25.8694063,28.4936484 L29.8565703,28.4936484 L29.8565703,24.5589453 C29.8565703,19.2517578 31.4423516,15.4283516 37.2532969,15.4283516 L44.1644609,15.4283516 L44.1644609,21.9192969 L39.2994063,21.9192969 C36.8607031,21.9192969 36.3074063,23.5389453 36.3074063,25.2357578 L36.3074063,28.4936484 L43.8058672,28.4936484 L42.7829453,35 L36.3075391,35 L36.3075391,54.6242422 L29.8565703,54.6242422 L29.8565703,35 L25.8694063,35 Z M69,35 C69,16.2227031 53.7772969,1 35,1 C16.2227031,1 1,16.2227031 1,35 C1,53.7772969 16.2227031,69 35,69 C53.7772969,69 69,53.7772969 69,35 L69,35 Z" id="icn-facebook" fill="#FFFFFF"></path>
+    </g>
+</svg>

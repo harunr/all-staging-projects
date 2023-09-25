@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="35px" viewBox="0 0 25 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>component/toggle-handle</title>
+    <g id="component/toggle-handle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="handle-container" stroke="#DFDFDF" fill="#FFFFFF" x="0.5" y="0.5" width="24" height="34" rx="5"></rect>
+        <rect id="line" fill="#9E9E9E" x="8" y="12" width="1" height="11"></rect>
+        <rect id="line" fill="#9E9E9E" x="12" y="12" width="1" height="11"></rect>
+        <rect id="line" fill="#9E9E9E" x="16" y="12" width="1" height="11"></rect>
+    </g>
+</svg>

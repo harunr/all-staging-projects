@@ -1,0 +1,603 @@
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+img{
+    float: left;
+}
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: rgb(255,255,255); color: #4a4a4a; -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto;font-family: 'Source Sans Pro', sans-serif;font-weight: 400;line-height: 26px;font-size: 16px;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+/*================Begin common-style==============================*/
+/*======Font size=============*/
+h1,h2,h3,h4,h5,h6{font-weight: 700;}
+h1{font-size: 52px;line-height: 56px;}
+h2{font-size: 42px;line-height: 46px;}
+h3{font-size: 36px;}
+h4,h5{font-size: 26px;line-height: 22px;}
+h5{font-size: 18px;}
+h6{font-size: 16px;}
+
+.white,.lead-white,.transparent-white,.transparent-green:hover,.transparent-orange:hover,.transparent-dark-green:hover,.transparent-purple-btn:hover{color: #ffffff;}
+h3.white{font-weight: 300;}
+h4.purple,h5.purple,.dark-purple,.purple{color: #561969;}
+/*======End Font size=============*/
+
+.lead, .lead-white, .lead-center{font-size: 20px; line-height: 30px;}
+.lead-center{text-align: center;}
+.lead-white{font-weight: 700;}
+.hint-text{color: #b8b5b5;}
+
+/*btn style*/
+.btn-wrap{float: left;width: 100%;text-align: center;}
+.btn, .transparent-btn{width: 160px;height: 40px;color: #ffffff;text-align: center;line-height: 37px;border-radius: 2px;font-weight: 700;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;transition: all .3s ease;}
+.green-btn{background-color: #91cf65;}
+.green-btn:hover{background-color: #a7d984;}
+.orange-btn{background-color: #ff7d24;}
+.orange-btn:hover{background-color: #ff9750;}
+.dark-green-btn{background-color: #085a43;}
+.dark-green-btn:hover{background-color: #397b69;}
+.purple-btn{background-color: #9c27b0;}
+.purple-btn:hover{background-color: #b052c0;}
+
+.transparent-btn{border: 2px solid #75ba43;background: transparent;}
+.transparent-white{border-color:#ffffff;}
+.transparent-white:hover{background-color: #ffffff;border-color:#ffffff;color: #4a4a4a;}
+.transparent-green{border-color:#75ba43;}
+.transparent-green:hover{background-color: #75ba43;border-color:#75ba43;}
+.transparent-orange{border-color:#ff7d24;}
+.transparent-orange:hover{background-color: #ff7d24;border-color:#ff7d24;}
+.transparent-dark-green{border-color:#085a43;color: #085a43;}
+.transparent-dark-green:hover{background-color: #085a43;border-color:#085a43;}
+.transparent-purple-btn{border-color:#9c27b0;color: #9c27b0;}
+.transparent-purple-btn:hover{background-color: #9c27b0;border-color:#9c27b0;}
+/*End btn style*/
+
+/*=========color=============*/
+.light-green{color: #d4e6ba;}
+.medium-green{color: #91cf65;}
+.green,.transparent-green{color: #75ba43;}
+.dark-green-2{color: #085a43;}
+.orange,.transparent-orange{color: #ff7d24;}
+.grey{color: #4a4a4a;}
+.light-grey{color: #c3c2c2;}
+.purple{color: #9c27b0;}
+/*=========End color=============*/
+
+
+/*=====input style=========*/
+
+.input-row{max-width: 300px}
+.input-row input, input[type="text"],input[type="submit"],textarea{max-width: 300px;font-family: 'Source Sans Pro', sans-serif;color: #b8b5b5;border: 1px solid #a7a7a7;border-radius: 2px;font-size: 16px;height: 40px;padding-left: 9px;float: left;width: 100%;}
+input[type="submit"]{border: 0px;padding: 0px;color: #ffffff;width: 150px;height: 40px;cursor: pointer}
+.group .input-row input:focus,.group textarea:focus{border-color: #085a43;}
+.broker .input-row input:focus,.broker textarea:focus{border-color: #91cf65;}
+.direct .input-row input:focus,.direct textarea:focus{border-color: #ff7d24;}
+.consulting .input-row input:focus,.consulting textarea:focus{border-color: #9c27b0;}
+.input-row input:invalid{border-color: #fb5454;}
+textarea{height: 100px; resize: none}
+/*=====End input style=========*/
+body,html,.main-wrap{height: 100%; min-height: 100%;}
+.main-wrap-inner{display: table-row; height: 100%;}
+.main-wrap{width: 100%; width: 1200px; margin: 0 auto; clear: both; display: table; border-collapse: collapse;}
+section, header, footer{float: left; width: 100%;}
+.common-wrap{width: 990px;margin: 0 auto;padding: 0 15px;clear: both;}
+.logo-wrap.small-logo img{max-width: 104px;}
+/*================End common-style==============================*/
+
+/*===============Begin Insurance home style======================*/
+.header-area{float: left; background: #ffffff; position: relative; width: 100%; z-index: 999;}
+.logo-wrap {float: left; width: auto; max-width: 233px;margin: 16px 0;margin-left: -5px;} 
+.logo-wrap a {float: left; width: 100%;} 
+.logo-wrap img {float: left; width: 100%; }
+.main-menu-area {float: right; } 
+.main-menu-area ul {float: left; }
+.main-menu-area li {float: left; margin-left: 21px; } 
+.main-menu-area li a{color: #4a4a4a; font-weight: 600; font-size: 14px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;transition: all .3s ease;padding: 31px 0 23px 0;}
+.broker-page-body .main-menu-area li a:hover,.broker-page-body .main-menu-area li.current-menu-item a{color: #75ba43;}
+.main-content{float: left; width: 100%;}
+.hero-section{min-height: 200px; max-height: 420px; overflow: hidden; background-size: cover;background-position: center;background-repeat: no-repeat;background-color: #dddddd; position: relative;}
+.hero-section.medium-hero{min-height: 300px;}
+.large-hero.hero-section{min-height: 420px;}
+.hero-section-title{ float: left; margin: 52px 0 56px 60px; position: relative; z-index: 1; text-transform: uppercase;}
+.large-hero.hero-section .hero-section-title{margin-top: 147px; margin-left: 7.5%; }
+.hero-section-title h1{text-transform: uppercase; position: relative; display: inline-block;}
+.hero-section-title h2{position: relative;}
+.hero-section-title h1:after,.hero-section-title h2:after{position: absolute; content: ''; border: solid 11px rgba(145, 207, 101, 0.8); background: transparent; z-index: -1; width: 103px; height: 104px; top: 50%; transform: translateY(-50%); left: -60px;}
+.large-hero.hero-section .hero-section-title h1:after{left: -73px; width: 163px; height: 163px;}
+
+.direct .hero-section-title h1:after,.direct .hero-section-title h2:after,.our-company-direct-content .hero-section-title h1:after{border: solid 11px rgba(255, 132, 49, 0.8);}
+.group.our-story-content .hero-section-title h1:after,.group.our-story-content .hero-section-title h2:after,.group.group-contact-content .hero-section-title h1:after,.group.group-contact-content .hero-section-title h2:after{border: solid 10px rgba(10, 77, 59, 0.7); left: -61px;}
+.consulting .hero-section-title h1:after,.consulting .hero-section-title h2:after,.our-company-consulting-content .hero-section-title h2:after{border: solid 11px rgba(156, 39, 176, 0.5); left: -52px;}
+
+.hero-icon-wrap{float: left; width: 100%; position: absolute; bottom: 0;max-width: 960px;}
+.single-icon-wrap{float: left;width: 33.22916666666667%;background-color: rgba(255, 255, 255, 0.25);padding: 15px 0;padding-left: 68px;margin-left: 1px;}
+.single-icon-wrap:first-child{margin-left: 0;}
+.single-icon-wrap:nth-child(2){padding-left: 55px;}
+.single-icon-wrap:nth-child(3){padding-left: 37px;}
+.single-icon-wrap figure{float: left; width: 40px; height: 40px; }
+.single-icon-wrap figure img{width: 100%;}
+.single-icon-wrap h5{margin-left: 21px;float: left;margin-top: 11px; }
+
+.content-area { padding: 44px 0 49px 0; } 
+.content-wrap { float: left; width: 68.54166666666667%; max-width: 658px; padding-right: 15px;}
+.single-content { float: left; width: 100%; margin-top: 26px; } 
+.single-content .lead { margin-top: 25px; float: left;} 
+.single-content:first-child{ margin-top: 6px; }
+.single-content:nth-child(3){ margin-top: 17px; }
+.single-content:nth-child(4){ margin-top: 17px; }
+.single-content:nth-child(3) p { padding-right: 16.26139817629179%; }
+.side-news { float: left; width: 31.45833333333333%; max-width: 302px; padding-left: 3.125%;position: relative;}
+.side-news:after, .convertion-wrap:after {position: absolute;top: 0;left: 0;width: 2px;height: 100%;content: '';background-image: linear-gradient(to bottom, #cccccc, rgba(230, 230, 230, 0.23));}
+.new-header{float: left;width: 100%;font-size: 20px;line-height: 22px;font-weight: 700;letter-spacing: .4px}
+.news-item { float: left; width: 100%;margin-top: 18px;margin-left: 2px;}
+.news-item:first-child {margin-top: 0;}
+.news-item:nth-child(3) { margin-top: 26px; margin-left: 0px; }
+.news-item span{font-size: 12px; line-height: normal; font-weight: bold;}
+.news-item p{min-width: 249px;padding-right: 20px;}
+/*===============End InsuInsurance home style======================*/
+
+/*===============Begin YOA companies style======================*/
+.group.our-company-direct-content .hero-section-title h2:after{border: 10px solid rgba(255, 125, 37, 0.7);}
+.group.consulting.our-company-consulting-content .hero-section-title h2:after{border: 10px solid rgba(156, 39, 176, 0.7);}
+.group.our-company-content .hero-section-title h2:after{border: 10px solid rgba(117, 185, 67, 0.7);}
+.group-page-body .logo-wrap{width: auto;}
+.group-page-body .main-menu-area li a:hover,.group-page-body .main-menu-area li.current-menu-item a{color: #085a43;}
+.group-page-body .tab-menu li a.active, .group-page-body .tab-menu li a:hover{color: #085a43;}
+
+.yoa-companies .hero-section {position: relative;z-index: 1; background: rgba(32,111,69,1); background: -moz-linear-gradient(top, rgba(32,111,69,1) 0%, rgba(22,103,65,1) 53%, rgba(17,99,64,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,111,69,1)), color-stop(53%, rgba(22,103,65,1)), color-stop(100%, rgba(17,99,64,1))); background: -webkit-linear-gradient(top, rgba(32,111,69,1) 0%, rgba(22,103,65,1) 53%, rgba(17,99,64,1) 100%); background: -o-linear-gradient(top, rgba(32,111,69,1) 0%, rgba(22,103,65,1) 53%, rgba(17,99,64,1) 100%); background: -ms-linear-gradient(top, rgba(32,111,69,1) 0%, rgba(22,103,65,1) 53%, rgba(17,99,64,1) 100%); background: linear-gradient(to bottom, rgba(32,111,69,1) 0%, rgba(22,103,65,1) 53%, rgba(17,99,64,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206f45', endColorstr='#116340', GradientType=0 ); }
+
+.yoa-companies .hero-section:after{position: absolute;top:0;right: 0;width: 100%;max-width: 345px; height: 100%; max-height: 380px; background: url(../images/hero-grahphics.png)no-repeat center center/ cover;content: '';z-index: -1; background-size: contain;}
+.hero-content{float: left; width: auto; padding-left: 167px; position: relative;margin-top: 88px;}
+.hero-content .hero-title{font-size: 70px; line-height: 74px; font-weight: bold; color: #ffffff;text-transform: uppercase; } .hero-content .hero-title span{display: block; }
+.hero-content h3{line-height: 44px; font-weight: 400; margin-top: 14px; }
+.hero-content:after{position: absolute;top: 7px;left: 0; width: 136px; height: 136px; background-image:url(../images/companiness-logo.png); background-repeat: no-repeat; background-position: center center; background-size: cover; content: '';}
+.hero-graphics{position: absolute; top: 0; right: 0; height: 100%; max-height: 400px;} 
+.hero-graphics img{width: 100%;}
+
+.yoa-companies .content-area{padding: 60px 0;}
+.yoa-companies .lead-center { max-width: 866px; margin: 0 auto; padding: 0 10px; }
+.service-item{ float: left;width: 100%;-webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; align-items: center;}
+.service-item:first-child .service-content p,.service-item:first-child .service-content a{margin-top: 25px;}
+.service-item:nth-child(2) .service-content p{margin-top: 15px;}
+.service-figure { float: left; width: 55.83333333333333%; max-width: 670px; }
+.service-figure img { width: 100%; }
+.service-item:nth-child(1){ background: #75b943; }
+.service-item:nth-child(2){ background: #ff7d25; }
+.service-item:nth-child(3){background: #9c27b0;}
+.service-item:nth-child(even) .service-figure { order: 2; }
+.service-item:nth-child(even) .service-content {padding-left: 112px; margin-top: -8px;}
+.service-item:nth-child(even) .service-content .service-logo-wrap{margin-left: 0;}
+.service-content{float: left; width: 44.16666666666667%; padding: 30px 50px 30px 40px;}
+.service-logo-wrap{float: left; width: 100%; margin-left: -5px;} 
+.service-content p{margin-top: 30px; float: left; color: #ffffff; max-width: 366px; }
+.service-content a{margin-top: 33px;}
+/*===============End YOA companies style======================*/
+
+/*===============Begin service sell style======================*/
+.direct-page-body .main-menu-area li a:hover,.direct-page-body .main-menu-area li.current-menu-item a{color: #ff7d24;}
+.small-hero .hero-section-title{margin: 52px 0 56px 60px;}
+.tab-menu { float: left; width: 20.625%; max-width: 198px; margin-top: -7px; }
+.tab-section { padding-top: 38px; padding-bottom: 55px; }
+.tab-menu li { padding: 10px 0; border-bottom:1px rgba(74, 74, 74, 0.36);border-style: dotted;font-weight: 600; }
+.tab-menu li a{color: #4a4a4a;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;transition: all .3s ease;}
+.tab-menu > ul > li > ul > li{border-bottom: 0; border-top: 1px rgba(74, 74, 74, 0.36);border-style: dotted; padding-left: 30px;}
+.tab-menu > ul > li > ul > li:first-child{margin-top: 9px;}
+.tab-menu > ul > li > ul > li:last-child{padding-bottom: 0;}
+.direct  .tab-menu li a:hover, .direct  .tab-menu li a.active{color: #ff7d24;}
+.tab-content-wrap { float: left; width: 51.35416666666667%; max-width: 493px;margin-left: 5%; } 
+
+.tab-item { float: left; width: 100%; padding-right: 6.288032454361055%; }
+.tab-item p{ margin-top: 23px; padding-right: 3.042596348884381%;padding-left: 1px; }
+.tab-item p a:hover{text-decoration: underline;}
+.list-item { float: left; width: 100%; margin-top: 12px; } 
+.list-item ul, .list-item-row ul { float: left; width: 100%; margin-top: 20px; }
+.list-item ul li, .list-item-row ul li { padding-left: 22px; margin-top: 14px; position: relative; }
+.list-item ul li:first-child, .list-item-row ul li:first-child, .valuations-and-risk-content .list-item ul li:first-child{margin-top: 0;} 
+.list-item ul li:before,.list-item-row ul li:before { position: absolute; top: 9px; left: -4px; background: url(../svg/check-orange.svg)no-repeat center center / cover; width: 19px; height: 9px; content: ''; }
+
+.icon-wrap { width: 70px; height: 70px; margin: 0 auto;margin-top: 2px; }
+.convertion-wrap{ float: left; width: 23.02083333333333%; max-width: 221px; padding: 0px 3.020833333333333% 0 3.333333333333333%; position: relative;}
+/*.service-sell-content*/ .convertion-wrap:after{height: 400px;}
+.convertion-wrap h6 { margin-top: 14px;letter-spacing: .1px; } 
+.convertion-wrap a { margin-top: 10px;}
+/*===============End service sell style======================*/
+
+/*===============Begin  Who We Are style======================*/
+.less-padding{padding-bottom: 51px;}
+.broker .tab-menu li a:hover,.broker .tab-menu li a.active{color: #75b943;}
+.person-info-wrap, .companies-yoac .tab-content-wrap { float: left; width: 65.625%; max-width: 630px; margin-left: 5.104166666666667%; margin-top: 8px; }
+.person-info-wrap .lead, .who-we-are-direction .person-info-wrap .lead, .who-we-are-management .person-info-wrap .lead { margin-top: 24px;}
+.person-info-wrap{width: 67.625%; max-width: 650px;}
+.person-info { float: left; width: 100%; margin-top: 40px; padding-bottom: 47px;position: relative;padding-left: 3.035143769968051%;}
+.person-info:nth-last-of-type(2){padding-top: 8px;padding-bottom: 80px;}
+.person-info:nth-last-of-type(2) .person-content{margin-top: -4px;}
+.person-info:nth-last-of-type(2) .person-content a{margin-top: 12px;}
+.person-info:after{position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background-image: linear-gradient(to bottom, #cccccc, rgba(230, 230, 230, 0.23));content: '';} 
+.person-wrap { float: left; width: 182px; height: 182px;position: relative;z-index: 1;}
+.person-wrap:after {position: absolute;top:18px;left: -18px;width: 162px;height: 162px;background: transparent;border: solid 10px #91cf65;content: '';z-index: -1;} 
+.person-wrap img { width: 100%; } 
+.person-content { float: left; margin-left: 7.827476038338658%; width: 60.38338658146965%; }
+.person-title { font-weight: 700; font-size: 20px; line-height: 22px; } 
+.person-title span { display: block; font-size: 16px; line-height: 30px; } 
+.person-content p { margin-top: 15px; } 
+.person-content a{ margin-top: 6px; font-weight: 700;color: #75ba43;}
+.person-content a:hover{text-decoration: underline;}
+.person-info-wrap .btn-wrap { margin-top: 30px; /*margin-left: 7.188498402555911%;*/ margin-left: 5.188498%;}
+.tab-section .transparent-btn { width: 191px; margin-left: -85px; }
+/*===============End Who We Are style======================*/
+
+/*===============Begin consulting contact======================*/
+.consulting-page-body .main-menu-area li a:hover, .consulting-page-body .main-menu-area li.current-menu-item a{color: #9c27b0;}
+.consulting .small-hero .hero-section-title,.direct-contact-content .small-hero .hero-section-title, .who-we-are-board .small-hero .hero-section-title{margin: 54px 0 56px 54px;}
+
+.contact-content-wrap { padding: 33px 0 65px 0; } 
+.contact-inner-wrap { max-width: 630px; margin: 0 auto; clear: both; } 
+.contact-content { float: left; width: 52.38095238095238%; max-width: 330px;margin-top: 6px;} 
+.contact-form-section { float: left; width: 47.61904761904762%; }
+.contact-content .lead{ line-height: 30px; margin-top: 25px; }
+
+.address-info { float: left; width: 100%; }
+.address-info img { float: left; margin-top: 4px; } 
+.address-info span { float: left; }
+.contact-address { float: left; width: 100%; margin-top: 30px; } 
+.contact-address a{color: #4a4a4a;margin-top: 14px;} 
+.contact-address a:last-child{margin-top: 7px;} 
+.contact-address a img { float: left;margin-top: 4px;} 
+.contact-address a span, .address-info span { float: left; margin-left: 12px;}
+
+.contact-form-section .input-row { margin-top: 16px; float: left; width: 100%; } 
+.contact-form-section .input-row:first-child { margin-top: 0px; } 
+.contact-form-section input[type="submit"] { margin-top: 15px; }
+.contact-form-section textarea{padding-top: 7px;}
+/*===============End consulting contact======================*/
+
+/*===============Begin Direct contact======================*/
+.direct .contact-content-wrap{padding: 37px 0 65px 0;}
+.direct .contact-address{margin-top: 26px;}
+.direct .contact-content-wrap{padding-bottom: 94px;}
+/*===============End Direct contact======================*/
+
+/*===============Begin Direct companies======================*/
+.direct-companies .hero-section-title h2{margin-top: 25px;}
+.direct-companies .tab-section{padding-bottom:49px}
+.direct-companies .tab-item p:nth-child(2){margin-top: 20px;}
+.direct-companies .tab-item p:nth-child(3){margin-top: 20px;padding-right: 0;}
+.direct-companies .tab-item p:nth-child(4){margin-top: 34px;}
+.direct-companies .tab-item{margin-top: 3px;}
+/*===============End Direct companies======================*/
+
+/*==============Begin Direct Broker insurance======================*/
+.direct-broker .small-hero .hero-section-title{margin-top: 77px;}
+/*.direct-broker .small-hero .hero-section-title h1:after{margin-top: -25px;}*/
+.direct-broker .tab-section{padding-bottom: 34px;}
+.direct-broker .tab-item h4{margin-top: 2px;}
+.direct-broker .tab-item p{margin-top: 21px;}
+.direct-broker .tab-item p:nth-child(3), .consulting-companines-yoad .tab-item p:nth-child(3){margin-top: 21px;}
+.direct-broker .tab-item p:nth-child(4){margin-top: 25px;}
+.direct-broker .tab-item p:last-child{margin-top: 23px;}
+/*==============End Direct Broker insurance======================*/
+
+/*==============Begin Direct who we area======================*/
+.direct .person-wrap:after{border: solid 10px rgba(255, 132, 49, 0.5)}
+.direct .less-padding{padding-bottom: 52px;}
+.direct .person-info{padding-bottom: 45px;}
+.direct .person-info:nth-last-of-type(2){margin-top: 20px;}
+.direct .person-info:nth-last-of-type(2) .person-content{padding-top: 17px;}
+.direct .person-info:nth-last-of-type(2) .person-content p{margin-top: 5px;}
+.direct .person-info:nth-child(3) .person-content .person-title { font-size: 18px;} 
+.direct .person-content { margin-top: 10px; } 
+.direct .person-content p { margin-top: 8px; } 
+.direct .person-content a.person-btn { margin-top: 9px; letter-spacing: -.2px;color: #ff8431; }
+/*==============End Direct who we area======================*/
+
+/*==============Begin Direct Service======================*/
+.direct-service .tab-section{padding-bottom: 42px;}
+.direct-service .tab-item{margin-top: 4px;}
+.tab-item h4 { margin-top: 0; line-height: 31px; }
+.direct-service .tab-item p{margin-top: 25px;}
+.tab-item h5 {margin-top: 28px; /*padding-right: 12.98174442190669%;*/}
+.direct-service  .tab-content { float: left; width: 100%; margin-top: 23px; } 
+.direct-service  .tab-content p{ margin-top: 14px !important;padding-right: 0px;}
+.direct-service  .tab-content p:first-child { margin-top: 0px !important;}
+.direct-service  .tab-content p:last-child { margin-top: 30px !important;padding-right: 10px;}
+.direct-service  .tab-content p span{font-weight: bold;letter-spacing: -.1px;margin-right: -1px;}
+
+.direct.direct-service.develop .list-item ul{width: 50%;}
+.direct-service.develop .tab-item{padding-right: 18px;}
+.direct-service.develop .tab-item p{margin-top: 20px;}
+/*==============End Direct Service======================*/
+
+/*==============Begin out story Service======================*/
+.our-story .tab-section{padding-bottom: 46px;}
+.our-story .tab-item{margin-top: 0px;padding-right: 3.042596348884381%;}
+.our-story .tab-content-wrap { max-width: 493px; margin-left: 4.7%; margin-top: 4px; }
+.our-story .tab-item p:nth-child(2){margin-top: 15px;}
+.our-story .tab-item p:nth-child(3), .consulting-our-story .tab-item p{margin-top: 26px;}
+.our-story .convertion-wrap{margin-left: 2px;}
+.our-story .convertion-wrap:after{height: 300px;}
+/*==============End our story======================*/
+
+/*==============Direct home======================*/
+.direct-home .content-wrap, .consulting-home .content-wrap { float: none; width: 65.625%; max-width: 630px; margin: 0 auto; }
+.direct-home .content-area{padding: 44px 0 67px 0;}
+.direct-home .single-icon-wrap{padding-left: 89px;}
+.direct-home .single-icon-wrap:nth-child(2){padding-left: 108px; }
+.direct-home .single-icon-wrap:nth-child(3){padding-left: 91px; }
+.direct-home .single-icon-wrap h5 { margin-left: 21px;margin-top: 9px; font-size: 26px; }
+.direct-home .single-content:first-child{margin-top: -4px;}
+.direct-home .single-content .lead{margin-top: 30px;}
+.direct-home .single-content p { float: left; width: 100%; margin-top: 25px; } 
+.direct-home .content-wrap p { float: left; width: 100%; margin-top: 21px; letter-spacing: .05px; }
+.direct-home .content-wrap p:nth-child(3) {margin-top: 0;}
+.direct-home .content-wrap p:nth-child(4) {margin-top: 26px;}
+/*==============End Direct home======================*/
+
+/*===============Begin Group Pages style======================*/
+.broker .tab-menu li a:hover,.broker .tab-menu li a.active{color: #75b943;}
+.our-company-content .tab-section{padding-bottom: 99px;}
+.our-company-content .lead{ margin-top: 26px;}
+.our-company-content .tab-item p:nth-child(4){margin-top: 28px;}
+.our-company-content .tab-menu li a:hover,.our-company-content .tab-menu li a.active,.our-company-consulting-content .tab-menu li a:hover,.our-company-consulting-content .tab-menu li a.active {color: #085a43}
+
+.our-company-content .hero-section.medium-hero .hero-section-title{margin: 127px 0 127px 71px;}
+.icon-wrap img{ float: left;width: 100%;}
+.our-company-direct-content .lead,.our-company-consulting-content  .lead{ margin-top: 25px;}
+.our-company-direct-content .tab-section{padding-bottom: 92px;}
+.our-company-direct-content .tab-item p, .our-company-content .tab-item{padding-right: 4.056795131845842%;}
+.our-company-direct-content .tab-item p:nth-child(4){margin-top: 33px;}
+.our-company-direct-content .our-company-content .small-hero .hero-section-title{margin-top: 85px;}
+.our-story-content .hero-section.medium-hero .hero-section-title{margin: 104px 0 104px 61px;}
+
+.our-story-content .tab-item .lead{margin-top: 26px;}
+.our-story-content .tab-item{position: relative;}
+.our-story-content .tab-item:after{position: absolute; top: 0; right: 0; width: 2px; height: 100%; content: ''; background-image: linear-gradient(to bottom, #cccccc, rgba(230, 230, 230, 0.23));}
+.our-story-content .tab-item p{margin-top: 20px;padding-right: 4.056795131845842%;padding-left: 0;}
+/*======Begin Group Pages style===================*/
+
+/*======Begin Broker Pages style===================*/
+.service-content-page .lead,.insurance-content-page .lead,.expacare-content-page .lead,.industry-content-page .lead,.industry-construction-content .lead,.industry-marine .lead,.industry-energy .lead,.who-we-are-direction .lead,.who-we-are-management .lead,.companies-yoad  .lead,.companies-yoac .lead{margin-top: 19px;}
+.broker-page-body .list-item-row ul li:before,.broker-page-body .list-item ul li:before{ background: url(../svg/check-green.svg) no-repeat center center / cover;content: ''}
+.features-info{ float:left; width: 100%; margin-top: 28px;}
+.features-info p{ float:left; width: 100%; margin-top: 16px;}
+.employee-content-page .lead{margin-top: 20px;}
+.list-item-row { float: left; width: 45.84178498985801%; max-width: 226px; }
+.list-item-row ul li{float: left; width: 100%;position: relative}
+
+.companies-yoad .tab-content-wrap{max-width:604px ; width:62.91666666666667%;margin-top: 7px;}
+.companies-yoac .tab-content-wrap{max-width:630px ; width:65.625% }
+.consulting-page-body .tab-menu ul li a.active, .consulting-page-body .tab-menu ul li a:hover{color:#9c27b0; }
+.list-item p{margin-top: 20px; clear: both;display: inline-block;}
+.consulting .list-item ul li:before{background: url(../svg/check-purple.svg)no-repeat center center / cover;content: ''}
+.work-can-include-text{ float:left; width: 100%; margin-top: 30px;}
+.work-can-include-text .single-content{margin-top: 9px; ; padding:0;}
+
+.companies-yoac .tab-section{padding-bottom: 43px;}
+.companies-yoac .tab-item, .companies-yoad .tab-item, .our-company-direct-content  .tab-item { margin-top: -4px;padding-right: 0;}
+.companies-yoac .tab-item .lead, .companies-yoad .tab-item .lead, .due-diligence-content .tab-item .lead, .valuations-and-risk-content .lead{ margin-top: 21px; }
+.companies-yoac .tab-item p:nth-child(3), .companies-yoad .tab-item p:nth-child(3){margin-top: 20px; padding-left: 0px; padding-right: 10px;}
+.companies-yoac .tab-item p:last-child, .our-company-consulting-content .tab-item p:last-child{margin-top: 27px; padding-left: 0px; letter-spacing: .1px;}
+
+.companies-yoad .tab-section{padding-bottom: 51px;}
+.companies-yoad .tab-item .lead{padding-right: 13.90728476821192%;}
+.companies-yoad .tab-item p:last-child{margin-top: 32px;letter-spacing: .1px;}
+
+.employee-content-page .tab-section, .expacare-content-page .tab-section, .our-story-content .tab-section{padding-bottom: 126px;}
+.employee-content-page .tab-content-wrap, .industry-energy .tab-content-wrap, .insurance-content-page .tab-content-wrap, .reinsurance-content-page .tab-content-wrap, .industry-content-page .tab-content-wrap, .industry-marine .tab-content-wrap{margin-top: 4px;}
+.employee-content-page .tab-item{padding-right: 4.665314401622718%;}
+.employee-content-page .tab-item p, .reinsurance-content-page .tab-item p, .our-company-content .tab-item p{padding-right: 0;margin-top: 21px;}
+
+.expacare-content-page .tab-item, .our-story-content .tab-item{padding-right: 10px;}
+.expacare-content-page .tab-item p { margin-top: 21px !important; }
+
+.industry-content-page .tab-section{padding-bottom: 50px;}
+.industry-content-page .tab-item{padding-right: 0;}
+.industry-content-page .tab-item p{padding-right: 7.302231237322515%;margin-top: 21px;}
+.list-item-row ul{margin-top: 37px;}
+.list-item-row:nth-child(3) ul li{padding-left: 32px;}
+
+.industry-construction-content .tab-section, .due-diligence-content .tab-section,  .consulting-companines-yoad .tab-section{padding-bottom: 44px;}
+.industry-construction-content .list-item{margin-top: 24px;}
+.industry-construction-content .tab-item{margin-top: 5px;}
+.industry-construction-content .list-item ul li, .industry-energy .list-item ul li, .industry-marine .insurance-content-page .list-item ul li, .claims-advisory-content .list-item ul li{padding-left: 27px;}
+
+.industry-energy .tab-section{padding-bottom: 60px;}
+.industry-energy .tab-item{ padding-right:8.113590263691684% }
+.industry-energy .tab-item p, .industry-marine .tab-item p{ margin-top: 20px; padding-right: 0px;}
+.industry-energy .list-item{margin-top: 27px;}
+.industry-marine .tab-section{padding-bottom: 30px;}
+.industry-marine .tab-item{padding-bottom: 28px;}
+.industry-marine .list-item{margin-top: 28px;}
+
+.insurance-content-page .tab-section{padding-bottom: 70px}
+.insurance-content-page .tab-item p{margin-top: 28px;padding-right: 6px;}
+.insurance-content-page .list-item{margin-top: 63px;padding-right: 10px;}
+.insurance-content-page .list-item h5 { letter-spacing: 0px; font-size: 16px; }
+.insurance-content-page .list-item ul{margin-top: 28px;padding-left: 6px;}
+.insurance-content-page .list-item ul li{padding-left: 22px;}
+
+.reinsurance-content-page .tab-section{padding-bottom: 87px;}
+.reinsurance-content-page .lead{margin-top: 20px;}
+.reinsurance-content-page .features-info p{padding-right: 5.070993914807302%;}
+.tab-content-wrap .features-info:nth-child(3) { margin-top: 44px; }
+
+.service-content-page .tab-section{padding-bottom: 66px;}
+.service-content-page .lead{margin-top: 21px;padding-right: 30.42596348884381%;}
+.service-content-page .tab-content-wrap, .consulting-companines-yoad .tab-content-wrap, .consulting-companines-yoaib .tab-content-wrap{margin-top: 3px;}
+.service-content-page .tab-content-wrap .tab-item, .consulting-our-story .tab-content-wrap .tab-item{padding-right: 0;}
+.service-content-page .tab-item p { margin-top: 19px; padding-right: 9.330628803245436%; padding-left: 1px; }
+
+.who-we-are-management .tab-section{/*padding-bottom: 48px;*/ padding-bottom: 30px;}
+.claims-advisory-content .small-hero .hero-section-title, .consulting due-diligence-content .small-hero .hero-section-title,{margin: 53px 0 56px 48px;}
+.claims-advisory-content .tab-section{padding-bottom: 28px;}
+.claims-advisory-content .lead{padding-right: 14.19878296146045%;margin-top: 21px;}
+.claims-advisory-content .list-item{margin-top: 29px;}
+.claims-advisory-content .list-item ul{margin-top: 24px;}
+
+.claims-advisory-content .list-item p{margin-top: 34px;letter-spacing: -.4px}
+.claims-advisory-content .convertion-wrap, .due-diligence-content .convertion-wrap, .valuations-and-risk-content .convertion-wrap, .our-company-content .tab-content-wrap, .our-story-content .tab-content-wrap{margin-top: -3px;}
+
+.due-diligence-content .tab-item .lead{padding-right: 20px;}
+.due-diligence-content .single-content{margin-top:0 ;padding-right: 6.693711967545639;}
+.due-diligence-content .single-content:nth-child(3) p{padding-right: 0;}
+.due-diligence-content .single-content:nth-child(2) { margin-top: 9px; } 
+.work-can-include-text .work-can-btn { margin-top:83px; float: left; }
+
+.valuations-and-risk-content.consulting .small-hero .hero-section-title{margin: 53px 0 56px 61px;}
+.valuations-and-risk-content .tab-item{margin-top: 2px;}
+.valuations-and-risk-content .tab-item p:nth-child(4), .consulting-companines-yoad .tab-item p:nth-child(2), .consulting-companines-yoaib .tab-item p:nth-child(2){margin-top: 25px;}
+.valuations-and-risk-content .list-item{margin-top: 60px;padding-right: 6.288032454361055%;}
+.valuations-and-risk-content .list-item ul{margin-top: 23px}
+.consulting.valuations-and-risk-content .list-item ul{padding-right: 25px;}
+
+.hero-section.medium-hero .hero-section-title{margin: 127px 0 127px 66px;}
+.hero-section.medium-hero .hero-section-title h1:after { height: 111px; width: 110px; left: -68px; }
+.our-company-consulting-content .tab-section {padding-bottom: 69px;}
+.our-company-consulting-content .tab-item{padding-right: 0;}
+.our-company-consulting-content .tab-item p { margin-top: 19px; padding-right: 5.070993914807302%; padding-left: 0; }
+
+.broker-contact-content .contact-content-wrap{padding: 40px 0 93px 0;}
+.broker-contact-content .contact-address{margin-top: 25px;}
+
+.consulting-companines-yoad .small-hero .hero-section-title, .consulting-companines-yoaib .small-hero .hero-section-title{margin: 77px 0 77px 60px;}
+.consulting-companines-yoad .tab-item p:last-child{margin-top: 37px;}
+.consulting-companines-yoaib .tab-section{padding-bottom: 49px;}
+.consulting-companines-yoaib .tab-item p:nth-child(3){margin-top: 26px;}
+.consulting-companines-yoaib .tab-item p:last-child{margin-top: 39px;}
+.convertion-wrap{width: 25.020833%;}
+
+.consulting-page-body .person-wrap:after{border: solid 10px rgba(156, 39, 176, 0.5)}
+.consulting-page-body .person-content a{color: #9c27b0;}
+
+.who-we-are-management .small-hero .hero-section-title, .who-we-are-board .small-hero .hero-section-title{margin: 52px 0 56px 60px;}
+.who-we-are-management .small-hero .hero-section-title h1:after, .who-we-are-board .small-hero .hero-section-title h1:after{left: -60px;}
+.who-we-are-management .person-info-wrap{margin-top: 2px;}
+.who-we-are-management .person-info-wrap .lead{margin-top: 30px;}
+.who-we-are-management .person-content, .who-we-are-board .person-content{padding-top: 2px;}
+.who-we-are-management .person-content .person-title, .who-we-are-board .person-content .person-title{font-size: 18px;}
+.who-we-are-management .person-content span, .who-we-are-board  .person-content span{margin-top: 2px;}
+.who-we-are-management .person-info:nth-last-of-type(2), .who-we-are-board  .person-info:nth-last-of-type(2){margin-top: 37px;padding-bottom: 40px;}
+.who-we-are-management .person-info:nth-last-of-type(2) .person-content, .who-we-are-board  .person-info:nth-last-of-type(2) .person-content{margin-top: 4px;}
+
+.consulting-contact-content .small-hero .hero-section-title{margin: 54px 0 56px 51px;}
+.consulting-our-story .tab-section{padding-bottom: 40px;}
+.consulting-our-story .tab-content-wrap{margin-top: 3px;}
+.consulting-our-story .tab-item p{padding-right: 6.085192697768763%;}
+
+.consulting-home .single-icon-wrap:first-child { padding-left: 23px; } 
+.consulting-home .single-icon-wrap:nth-child(2) { padding-left: 61px; } 
+.consulting-home .single-icon-wrap:nth-child(3) { padding-left: 18px; }
+
+.consulting-home .single-icon-wrap:first-child h5 { margin-left: 3px; float: left; margin-top: 14px; }
+.consulting-home .single-icon-wrap:nth-child(2) h5, .consulting-home .single-icon-wrap:nth-child(3) h5 {margin-left: 12px;margin-top: 14px;}
+.consulting-home .content-area{padding-bottom: 55px;}
+.consulting-home .single-content:first-child{margin-top: 2px;}
+.consulting-home .content-wrap p{float: left; width: 100%; margin-top: 21px; padding-right: 5px;}
+
+.group-contact-content .hero-section.medium-hero .hero-section-title { margin: 104px 0 104px 66px; }
+.group-contact-content .contact-content-wrap{padding-bottom: 50px;}
+.group-contact-content .contact-content{margin-top: 7px;}
+.group-contact-content .contact-content .lead{margin-top: 29px;}
+.group-contact-content .contact-address{margin-top: 23px;}
+.group-contact-content .contact-form-section{margin-top: 6px;}
+
+/*==========Beginning Footer Section=====================*/
+.footer-area{padding: 6px 0 28px 0;border-top: 1px solid #e5e5e5; display: table-row;}
+.copright-area { float: left; font-size: 12px; } 
+.legal-state { float: right; font-size: 12px;} 
+.legal-state a { font-weight: 600; color: #4a4a4a; text-decoration: underline; }
+
+.direct.direct-service .tab-item h5{max-width: 395px;}
+.direct .convertion-wrap{padding-right: 2.020833%;}
+.consulting.consulting-home .large-hero.hero-section .hero-section-title{margin-top: 120px;}
+
+.broker.who-we-are-management .person-info-wrap{margin-top: 8px;}
+.broker.who-we-are-management .person-info-wrap .lead{margin-top: 25px;}
+.broker.who-we-are-management .person-content .person-title, .broker.who-we-are-board .person-content .person-title{font-size: 20px;}
+
+.broker.who-we-are-management .person-info:nth-last-of-type(2) .person-content, .broker.who-we-are-board  .person-info:nth-last-of-type(2) .person-content{margin-top: 0;}
+.broker.who-we-are-management .person-wrap, .broker.who-we-are-board  .person-wrap{margin-top: 6px;}
+.broker.who-we-are-management .tab-section{padding-bottom: 48px;}
+
+.industry-marine .list-item ul,.industry-marine .list-item, .broker.industry-construction-content .list-item ul{margin-top: 0;}
+.industry-energy .list-item{margin-top: 8px;}
+.broker.companies-yoac .tab-item p:nth-child(3){margin-top: 20px;}
+.broker.companies-yoac .tab-section{padding-bottom: 50px;}
+
+/* fixing style */
+body{overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
+.convertion-wrap{padding: 0 2% 0 3.33333%; text-align: center;}
+.service-content p{margin-top: 25px;}
+
+.single-icon-wrap h5,.consulting-home .single-icon-wrap h5,.consulting-home .single-icon-wrap:first-child h5, .consulting-home .single-icon-wrap:nth-child(2) h5, .consulting-home .single-icon-wrap:nth-child(3) h5{margin-top: 9px;}
+
+.consulting .small-hero .hero-section-title, .direct-contact-content .small-hero .hero-section-title, .who-we-are-board .small-hero .hero-section-title,.valuations-and-risk-content.consulting .small-hero .hero-section-title,.small-hero .hero-section-title,.hero-section-title,.consulting.consulting-home .large-hero.hero-section .hero-section-title,.direct-broker .small-hero .hero-section-title,.who-we-are-management .small-hero .hero-section-title, .who-we-are-board .small-hero .hero-section-title,.hero-section.medium-hero .hero-section-title,.our-company-content .hero-section.medium-hero .hero-section-title,.our-story-content .hero-section.medium-hero .hero-section-title,.group-contact-content .hero-section.medium-hero .hero-section-title{margin-top: 0; margin-bottom: 0; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%);}
+
+.large-hero.hero-section .hero-section-title{margin-left: 73px;}
+.consulting.consulting-home .large-hero.hero-section .hero-section-title,.large-hero.hero-section .hero-section-title{top: 42%; margin-top: 0;}
+
+.direct-companies .hero-section-title h2,.who-we-are-management .person-content span, .who-we-are-board .person-content span,.person-info:nth-last-of-type(2) .person-content,.direct-broker .tab-item h4,.direct-companies .tab-item,.our-story .tab-content-wrap,.claims-advisory-content .convertion-wrap, .due-diligence-content .convertion-wrap, .valuations-and-risk-content .convertion-wrap, .our-company-content .tab-content-wrap, .our-story-content .tab-content-wrap,.companies-yoac .tab-item, .companies-yoad .tab-item, .our-company-direct-content .tab-item,.valuations-and-risk-content .tab-item,.broker.who-we-are-management .person-wrap, .industry-construction-content .tab-item, .consulting-our-story .tab-content-wrap .tab-item, .employee-content-page .tab-content-wrap, .expacare-content-page .tab-content-wrap, .service-content-page .tab-content-wrap, .insurance-content-page .tab-content-wrap, .reinsurance-content-page .tab-content-wrap, .employee-content-page .tab-content-wrap{margin-top: 0px;}
+
+.who-we-are-management .person-content, .who-we-are-board .person-content{padding-top: 0;}
+.broker.who-we-are-management .person-info, .broker.who-we-are-board .person-info{margin-top: 40px;}
+.broker.who-we-are-management .person-info-wrap .lead,.who-we-are-management .person-info-wrap .lead{margin-top: 24px;}
+.consulting .hero-section-title h1:after, .consulting .hero-section-title h2:after, .our-company-consulting-content .hero-section-title h2:after{left: -60px;}
+
+.hero-section-title,.valuations-and-risk-content.consulting .small-hero .hero-section-title,.who-we-are-management .small-hero .hero-section-title, .who-we-are-board .small-hero .hero-section-title,.consulting-companines-yoad .small-hero .hero-section-title, .consulting-companines-yoaib .small-hero .hero-section-title,.our-company-content .hero-section.medium-hero .hero-section-title,.hero-section.medium-hero .hero-section-title,.our-story-content .hero-section.medium-hero .hero-section-title,.small-hero .hero-section-title{margin-left: 54px;}
+
+.who-we-are-management .person-info:nth-last-of-type(2), .who-we-are-board  .person-info:nth-last-of-type(2){padding-bottom: 80px;}
+.list-item-row:nth-child(3) ul li{padding-left: 22px;}
+.contact-form-section input[type="submit"]{font-weight: 700;}
+.service-item:nth-child(2) .service-content p{margin-top: 25px;}
+
+.person-info-wrap,.who-we-are-management .person-info-wrap, .broker.who-we-are-board  .person-wrap, .who-we-are-management .person-info-wrap{margin-top: 8px;}
+
+.industry-energy .tab-content-wrap, .industry-content-page .tab-content-wrap, .industry-marine .tab-content-wrap, .companies-yoad .tab-content-wrap, .companies-yoac .tab-content-wrap, .consulting-companines-yoad .tab-content-wrap, .consulting-companines-yoaib .tab-content-wrap, .consulting-our-story .tab-content-wrap{margin-top: 4px;}
+
+#bg-video{position: absolute; width: 100%; height: auto; z-index: 2;}
+.yoa-companies .hero-section .common-wrap{position: relative; z-index: 1;}
+.our-story-content .tab-item:after{right: -2px;}
