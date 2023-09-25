@@ -1,0 +1,80 @@
+:root{
+
+    --white: #ffffff;
+    --black: #050505;
+
+    --Bunker: #11151C;
+    --Elephant: #112842;
+    --Pizazz: #FB8B00;
+    --Alto: #D9D9D9;
+    --Alto_two: #E0E0E0;
+
+    --Plus_Jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {font-family: var(--Plus_Jakarta); color: var(--white); background-color: var(--black); font-size: 20px; line-height: 28px;}
+
+h1{font-size: 72px; line-height: 80px; font-weight: 700;}
+h1 span{background: linear-gradient(90deg, #F26523 0%, #F77916 53.44%, #FF9900 86.83%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;}
+
+
+
+.btn{font-size: 16px; line-height: 20px; font-weight: 600; color: var(--white); padding: 16px 32px; border-radius: 60px; background: linear-gradient(90deg, #F26523 0%, #F77916 53.44%, #FF9900 86.83%); text-align: center;}
+
+.btn_transparent{font-size: 16px; line-height: 20px; font-weight: 600; color: var(--white); padding: 15px 31px; border-radius: 60px; background-color: transparent; border: 1px solid var(--white);}
+
+.common-wrap{max-width: 1424px; margin: 0 auto; padding: 0 20px; clear: both; }
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+
+
+
+
+
+/* Start Home Style */
+/* Start Header Style */
+.header-section{padding: 32px 0; top: 0; left: 0; z-index: 99; background-color: transparent;}
+.logo-wrap{width: 175px;}
+.main-logo a img.dark-logo{position: relative; opacity: 1; visibility: visible;}
+.main-logo a img.light-logo{opacity: 0; visibility: hidden; top: 0; left: 0;}
+
+.nav-wrap{width: calc(100% - 175px); padding-left: 20px;}
+
+.main-nav{width: calc(100% - 177px); padding: 0 20px 0 8.2%;}
+.main-nav ul{column-gap: 48px;}
+.main-nav ul li{list-style: none; position: relative;}
+.main-nav ul li a{font-size: 14px; line-height: 18px; color: var(--white); text-decoration: none; transition: .35s ease-in-out; font-weight: 500; position: relative;}
+.main-nav ul li a:hover{background: linear-gradient(90deg, #F26523 0%, #F77916 53.44%, #FF9900 86.83%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;}
+.main-nav ul li.has-sub-nav > a{padding-right: 29px;}
+.main-nav ul li.has-sub-nav > a:after{position: absolute; top: 50%; transform: translateY(-50%) rotate(180deg); right: 0; width: 20px; height: 14px; content: ''; background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; background-image: url(../svgs/ic_arrowdown.svg); transition: .3s ease-in-out;}
+.main-nav ul li.has-sub-nav:hover > a{background: linear-gradient(90deg, #F26523 0%, #F77916 53.44%, #FF9900 86.83%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;}
+.main-nav ul li.has-sub-nav:hover > a:after{transform: translateY(-50%) rotate(0deg);}
+.header-btn{width: 177px;}
+.header-btn a.btn{font-size: 14px; line-height: 17px; width: 100%; padding: 11px 32px;}
+
+.sub-nav{display: none; top: 18px; left: -10px; padding-top: 12px; width: 158px;}
+.sub-nav ul{width: 100%; background: linear-gradient(105.87deg, rgba(255, 255, 255, 0.16) 3.04%, rgba(255, 255, 255, 0) 99.23%);backdrop-filter: blur(40px);/* Note: backdrop-filter has minimal browser support */ border-radius: 11px; display: flex; flex-flow: row wrap; row-gap: 24px; padding: 30px 20px; border: 2px solid;
+
+border-image-source: radial-gradient(21.19% 40.1% at 100.03% 0%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%),
+radial-gradient(24.21% 39.21% at 0% 0%, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.19) 100%),
+radial-gradient(24.63% 49.68% at 0% 3.09%, #2267AC 0%, rgba(34, 103, 172, 0.05) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+radial-gradient(34.06% 92% at 100% 11.09%, #2267AC 0%, rgba(34, 103, 172, 0.05) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+radial-gradient(51.28% 26.09% at 53.3% 108.27%, #2267AC 0%, rgba(34, 103, 172, 0.05) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;}
+.sub-nav ul li{width: 100%;}
+.sub-nav ul li{width: 100%; text-align: center;}
+/* End Header Style */
+
+/* Start Hero Style */
+.hero-wrap{background: linear-gradient(180deg, #112842 47.08%, rgba(17, 40, 66, 0) 100%); padding: 121px 0 50px; overflow: hidden;}
+
+.hero-content{width: 50.86705202312139%; z-index: 1; padding-bottom: 66px;}
+.hero-content h1{margin-bottom: 24px;}
+.hero-content p{max-width: 806px; margin-bottom: 0;}
+.hero-btn{margin-top: 36px;}
+.hero-thumb{width: 71.38728323699422%; margin-right: -22.25433526011561%;}
+.hero-thumb figure{margin-left: -10.999%;}
+/* End Hero Style */
+
+
+/* End Home Style */
+
+

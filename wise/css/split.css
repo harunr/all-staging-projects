@@ -1,0 +1,87 @@
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  font-size: calc(var(--font-size) * 1px);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container {
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.page .char {
+  display: inline-block;
+  -webkit-animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+          animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+  transition: all 0.25s calc(0.25s + var(--char-index) * 0.1s);
+}
+.text--karaoke .char {
+  color: rgba(255,255,255,0.15);
+  transition-duration: 0.1s;
+}
+.text--karaoke .char:after {
+  color: #fff;
+  visibility: visible;
+}
+.text--karaoke [data-scroll='in'] .char:after {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+.text--karaoke [data-scroll='out'] .char:after {
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
+}
+.text--blocks [data-scroll='out'] .char {
+  visibility: hidden;
+}
+.text--blocks [data-scroll='in'] {
+  overflow: hidden;
+  position: relative;
+}
+.text--blocks [data-scroll='in'] .char {
+  transition-delay: 0.5s;
+}
+.text--blocks [data-scroll='in']:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  -webkit-animation: block 0.5s 0.25s both;
+          animation: block 0.5s 0.25s both;
+}
+@-webkit-keyframes block {
+  0% {
+    transform: translate(-110%, 0);
+  }
+  45%, 55% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(110%, 0);
+  }
+}
+@keyframes block {
+  0% {
+    transform: translate(-110%, 0);
+  }
+  45%, 55% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(110%, 0);
+  }
+}
